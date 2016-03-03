@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script>
+      $(document).ready(function(){
+        $('.materialboxed').materialbox();
+      });
+	   </script>
+  </head>
+
+  <body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h2 class="header">Darkroom Balloon zapper</h2>
+        <p class="caption">
+          This is a game that follows the idea that you do not need to touching anything to play the game.
+        </p>
+        <img class="materialboxed" width="650" src="noTouching/game.gif">
+        <h3 class="header light">How the game work</h3>
+				<p class="light">
+          This game can only be played in a darkroom due to how I implemented the game. The camera captures lights base on the reflection from the srceen light. The game tracks the center of mass of the light captured and will do actions base on the shape of the light captured. A decrease in the width of the lighted up area will zap all the balloons under the cursor and an increase in width will start the game.
+          <img class="materialboxed" width="650" src="noTouching/camera.gif">
+          <img class="materialboxed" width="650" src="noTouching/wholeGame.gif">
+        </p>
+        <h3 class="header light">Game mechanics</h3>
+        <p class="light">
+          After game starts, you will have 50 armor and 15 secs to zap all the balloons you can. You earn a score by zapping a balloon and the goal of this game is to zap as many balloons as possible.
+        </p>
+        <h3 class="header light">Tools Used</h3>
+        <p class="light">
+          <li>Buildin Camera</li>
+          <li>Processing</li>
+          <li>Blobscanner (Detecting light patterns)</li>
+          <li>A randam balloon picture I got from online</li>
+        </p>
+        <p class="light">
+          A awesome video that is best watched in Safari browser.
+          <video width="400" controls>
+            <source src="noTouching/record.mp4" type="video/mp4">
+              your browser does not support html5 video.
+            </video>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
